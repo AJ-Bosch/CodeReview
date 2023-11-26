@@ -15,6 +15,7 @@ namespace WebAPI.Entities
         public decimal? Longitude { get; set; }
         public bool? Pass { get; set; }
         public string? Comment { get; set; }
+        public bool IsDeleted { get; set; } = false; // Default value is false
         // Navigation properties
         public required Company Company { get; set; }
         public required Project Project { get; set; }

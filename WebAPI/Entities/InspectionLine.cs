@@ -11,6 +11,7 @@ namespace WebAPI.Entities
         public bool? ResultBoolean { get; set; }
         public string? ResultText { get; set; }
         public int? ResultDropdown { get; set; }
+        public bool IsDeleted { get; set; } = false; // Default value is false
         // Navigation property
         public required InspectionHeader InspectionHeader { get; set; }
     }

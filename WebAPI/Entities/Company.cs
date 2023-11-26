@@ -14,5 +14,6 @@ namespace WebAPI.Entities
         public string? LogoURL { get; set; }
         public required string Email { get; set; }
         public required string ContactNumber { get; set; }
+        public bool IsDeleted { get; set; } = false; // Default value is false
     }
 }

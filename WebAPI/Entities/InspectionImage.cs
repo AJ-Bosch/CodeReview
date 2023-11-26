@@ -9,6 +9,7 @@ namespace WebAPI.Entities
         public required int HeaderId { get; set; }
         public required string ImageUrl { get; set; }
         public DateTime? UploadDate { get; set; }
+        public bool IsDeleted { get; set; } = false; // Default value is false
         // Navigation property
         public required InspectionHeader InspectionHeader { get; set; }
     }

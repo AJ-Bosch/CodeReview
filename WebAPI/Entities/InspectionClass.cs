@@ -8,5 +8,6 @@ namespace WebAPI.Entities
         public required int ClassId { get; set; }
         public string? ClassName { get; set; }
         public string? Description { get; set; }
+        public bool IsDeleted { get; set; } = false; // Default value is false
     }
 }

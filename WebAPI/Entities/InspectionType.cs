@@ -9,6 +9,7 @@ namespace WebAPI.Entities
         public string? InspectionTypeName { get; set; }
         public string? Description { get; set; }
         public int? ProjectId { get; set; }
+        public bool IsDeleted { get; set; } = false; // Default value is false
         // Navigation property
         public Project? Project { get; set; }
     }

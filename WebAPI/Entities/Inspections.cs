@@ -9,6 +9,7 @@ namespace WebAPI.Entities
         public int? InspectionTypeId { get; set; }
         public required string Content { get; set; }
         public int? ClassId { get; set; }
+        public bool IsDeleted { get; set; } = false; // Default value is false
 
         // Navigation properties
         public required InspectionType InspectionType { get; set; }

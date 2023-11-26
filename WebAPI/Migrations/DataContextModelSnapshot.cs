@@ -31,6 +31,9 @@ namespace WebAPI.Migrations
                     b.Property<string>("AssetRef")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<decimal?>("Latitude")
                         .HasPrecision(10, 8)
                         .HasColumnType("decimal(10,8)");
@@ -72,6 +75,9 @@ namespace WebAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("LogoURL")
                         .HasColumnType("nvarchar(max)");
 
@@ -100,6 +106,9 @@ namespace WebAPI.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.HasKey("ClassId");
 
                     b.ToTable("INSPECTIONCLASS");
@@ -127,6 +136,9 @@ namespace WebAPI.Migrations
 
                     b.Property<int?>("InspectionTypeId")
                         .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<decimal?>("Latitude")
                         .HasPrecision(10, 8)
@@ -175,6 +187,9 @@ namespace WebAPI.Migrations
                     b.Property<int>("InspectionHeaderHeaderId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<bool?>("ResultBoolean")
                         .HasColumnType("bit");
 
@@ -204,6 +219,9 @@ namespace WebAPI.Migrations
 
                     b.Property<string>("InspectionTypeName")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<int?>("ProjectId")
                         .HasColumnType("int");
@@ -236,6 +254,9 @@ namespace WebAPI.Migrations
                     b.Property<int?>("InspectionTypeId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.HasKey("InspectionCheckId");
 
                     b.HasIndex("InspectionClassClassId");
@@ -262,6 +283,9 @@ namespace WebAPI.Migrations
                     b.Property<DateTime?>("EndDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("ProjectName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -287,6 +311,9 @@ namespace WebAPI.Migrations
                     b.Property<bool?>("GpsAssetSearch")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<bool?>("LocationTracking")
                         .HasColumnType("bit");
 
@@ -299,11 +326,11 @@ namespace WebAPI.Migrations
                     b.Property<int>("ProjectId")
                         .HasColumnType("int");
 
-                    b.Property<TimeSpan?>("TrackingEndTime")
-                        .HasColumnType("time");
+                    b.Property<DateTime?>("TrackingEndTime")
+                        .HasColumnType("datetime2");
 
-                    b.Property<TimeSpan?>("TrackingStartTime")
-                        .HasColumnType("time");
+                    b.Property<DateTime?>("TrackingStartTime")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("SettingId");
 
@@ -322,6 +349,9 @@ namespace WebAPI.Migrations
 
                     b.Property<int?>("AccessLevel")
                         .HasColumnType("int");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<string>("RoleName")
                         .HasColumnType("nvarchar(max)");
@@ -347,6 +377,9 @@ namespace WebAPI.Migrations
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
 
                     b.Property<DateTime?>("LastUpdate")
                         .HasColumnType("datetime2");

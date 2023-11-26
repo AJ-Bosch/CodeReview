@@ -23,7 +23,8 @@ namespace WebAPI.Migrations
                     Province = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     LogoURL = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ContactNumber = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ContactNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -37,7 +38,8 @@ namespace WebAPI.Migrations
                     ClassId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ClassName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -51,7 +53,8 @@ namespace WebAPI.Migrations
                     RoleId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     RoleName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    AccessLevel = table.Column<int>(type: "int", nullable: true)
+                    AccessLevel = table.Column<int>(type: "int", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -68,6 +71,7 @@ namespace WebAPI.Migrations
                     StartDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     EndDate = table.Column<DateTime>(type: "datetime2", nullable: true),
                     CompanyCode = table.Column<int>(type: "int", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     CompanyId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -93,6 +97,7 @@ namespace WebAPI.Migrations
                     RoleId = table.Column<int>(type: "int", nullable: true),
                     CompanyCode = table.Column<int>(type: "int", nullable: true),
                     LastUpdate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     CompanyId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -119,7 +124,8 @@ namespace WebAPI.Migrations
                     AssetRef = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ProjectId = table.Column<int>(type: "int", nullable: true),
                     Latitude = table.Column<decimal>(type: "decimal(10,8)", precision: 10, scale: 8, nullable: true),
-                    Longitude = table.Column<decimal>(type: "decimal(11,8)", precision: 11, scale: 8, nullable: true)
+                    Longitude = table.Column<decimal>(type: "decimal(11,8)", precision: 11, scale: 8, nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -139,7 +145,8 @@ namespace WebAPI.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     InspectionTypeName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ProjectId = table.Column<int>(type: "int", nullable: true)
+                    ProjectId = table.Column<int>(type: "int", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -162,8 +169,9 @@ namespace WebAPI.Migrations
                     Maps = table.Column<bool>(type: "bit", nullable: true),
                     LocationTracking = table.Column<bool>(type: "bit", nullable: true),
                     MaxDistanceFromAsset = table.Column<int>(type: "int", nullable: true),
-                    TrackingStartTime = table.Column<TimeSpan>(type: "time", nullable: true),
-                    TrackingEndTime = table.Column<TimeSpan>(type: "time", nullable: true)
+                    TrackingStartTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    TrackingEndTime = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -191,6 +199,7 @@ namespace WebAPI.Migrations
                     Longitude = table.Column<decimal>(type: "decimal(11,8)", precision: 11, scale: 8, nullable: true),
                     Pass = table.Column<bool>(type: "bit", nullable: true),
                     Comment = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     CompanyId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -228,6 +237,7 @@ namespace WebAPI.Migrations
                     InspectionTypeId = table.Column<int>(type: "int", nullable: true),
                     Content = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ClassId = table.Column<int>(type: "int", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     InspectionClassClassId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -257,6 +267,7 @@ namespace WebAPI.Migrations
                     ResultBoolean = table.Column<bool>(type: "bit", nullable: true),
                     ResultText = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ResultDropdown = table.Column<int>(type: "int", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false),
                     InspectionHeaderHeaderId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>

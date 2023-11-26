@@ -11,8 +11,9 @@ namespace WebAPI.Entities
         public bool? Maps { get; set; }
         public bool? LocationTracking { get; set; }
         public int? MaxDistanceFromAsset { get; set; }
-        public TimeSpan? TrackingStartTime { get; set; }
-        public TimeSpan? TrackingEndTime { get; set; }
+        public DateTime? TrackingStartTime { get; set; }
+        public DateTime? TrackingEndTime { get; set; }
+        public bool IsDeleted { get; set; } = false; // Default value is false
 
         // Navigation property
         public required Project Project { get; set; }

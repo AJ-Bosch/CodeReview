@@ -10,6 +10,7 @@ namespace WebAPI.Entities
         public int? ProjectId { get; set; }
         public decimal? Latitude { get; set; }
         public decimal? Longitude { get; set; }
+        public bool IsDeleted { get; set; } = false; // Default value is false
         // Navigation property
         public required Project Project { get; set; }
     }

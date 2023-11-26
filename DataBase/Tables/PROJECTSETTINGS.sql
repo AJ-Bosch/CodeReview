@@ -7,6 +7,7 @@
     [LOCATION_TRACKING] BIT NULL, -- Enable/Disable Location Tracking
     [MAX_DISTANCE_FROM_ASSET] INT NULL, -- Max distance from asset (in meters)
     [TRACKING_START_TIME] TIME NULL, -- Tracking Start Time
-    [TRACKING_END_TIME] TIME NULL,   -- Tracking End Time
+    [TRACKING_END_TIME] TIME NULL,   -- Tracking End Time,
+    [ISDELETED] BIT NOT NULL DEFAULT 0,  -- Soft delete flag
     FOREIGN KEY ([PROJECTID]) REFERENCES [dbo].[PROJECT]([PROJECTID])
 )
