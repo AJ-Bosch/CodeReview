@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="4bcf33ac-9331-4885-ae5c-dc5a05996b8e" ChangeDateTime="11/25/2023 10:12:53">
+    <Property Name="ElementName" Value="[dbo].[USER].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[USER]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="USERID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1d8466be-ce48-4781-bd14-b0d371bf624d" ChangeDateTime="11/25/2023 10:17:54">
+    <Property Name="ElementName" Value="[dbo].[ROLE].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ROLE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ROLEID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d3b8c742-6ddf-4ac6-9870-4bf94a744c11" ChangeDateTime="11/25/2023 10:19:28">
+    <Property Name="ElementName" Value="[dbo].[COMPANY].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[COMPANY]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="COMPANYID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d4288885-f189-4864-95d6-a0fb0ad8fa0a" ChangeDateTime="11/25/2023 10:23:21">
+    <Property Name="ElementName" Value="[dbo].[PROJECT].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PROJECT]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PROJECTID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a078acc0-0520-49c9-9f0e-7b8727d07998" ChangeDateTime="11/25/2023 10:26:41">
+    <Property Name="ElementName" Value="[dbo].[INSPECTIONTYPE].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[INSPECTIONTYPE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="INSPECTIONTYPEID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a07d53be-6c0d-4628-93d6-a5c88f86bf38" ChangeDateTime="11/25/2023 10:31:12">
+    <Property Name="ElementName" Value="[dbo].[INSPECTIONS].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[INSPECTIONS]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="INSPECTIONID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7cecccbf-2fc8-4caf-a22f-1b66a182a696" ChangeDateTime="11/25/2023 10:34:44">
+    <Property Name="ElementName" Value="[dbo].[INSPECTIONS].[INSPECTIONID]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[INSPECTIONS]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="INSPECTIONCHECKID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bd1872d3-7a52-4812-9cf7-a9001e6d0cf2" ChangeDateTime="11/25/2023 10:37:48">
+    <Property Name="ElementName" Value="[dbo].[INSPECTIONCLASS].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[INSPECTIONCLASS]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CLASSID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="db7ae64a-3989-46de-a3f3-01f9fa13b02d" ChangeDateTime="11/25/2023 10:39:50">
+    <Property Name="ElementName" Value="[dbo].[INSPECTIONDETAILS].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[INSPECTIONDETAILS]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="INSPECTIONDETAILID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dceb41c5-a70a-4420-ba1e-6f3410b79152" ChangeDateTime="11/25/2023 10:55:26">
+    <Property Name="ElementName" Value="[dbo].[INSPECTIONHEADER].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[INSPECTIONHEADER]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="HEADERID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8cf66bb4-dc81-44f8-b00f-cca96fd99d95" ChangeDateTime="11/25/2023 11:35:33">
+    <Property Name="ElementName" Value="[dbo].[INSPECTIONLINE].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[INSPECTIONLINE]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="LINEID" />
+  </Operation>
+</Operations>
